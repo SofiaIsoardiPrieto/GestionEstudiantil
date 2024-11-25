@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionEstudiantil.WindowsForm
 {
-    public partial class HistorialFinalesAprobados : Form
+    public partial class FrmPlanDeFinales : Form
     {
-        public HistorialFinalesAprobados()
+        public FrmPlanDeFinales()
         {
             InitializeComponent();
         }
