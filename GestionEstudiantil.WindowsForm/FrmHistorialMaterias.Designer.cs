@@ -30,12 +30,12 @@
         {
             splitContainer1 = new SplitContainer();
             dataGridView1 = new DataGridView();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
             ColMateria = new DataGridViewTextBoxColumn();
             ColFechaCursada = new DataGridViewTextBoxColumn();
             ColEstadoMateria = new DataGridViewTextBoxColumn();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -75,6 +75,27 @@
             dataGridView1.Size = new Size(595, 450);
             dataGridView1.TabIndex = 0;
             // 
+            // ColMateria
+            // 
+            ColMateria.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ColMateria.HeaderText = "Materia";
+            ColMateria.Name = "ColMateria";
+            ColMateria.ReadOnly = true;
+            // 
+            // ColFechaCursada
+            // 
+            ColFechaCursada.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ColFechaCursada.HeaderText = "Año";
+            ColFechaCursada.Name = "ColFechaCursada";
+            ColFechaCursada.ReadOnly = true;
+            // 
+            // ColEstadoMateria
+            // 
+            ColEstadoMateria.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ColEstadoMateria.HeaderText = "Estado";
+            ColEstadoMateria.Name = "ColEstadoMateria";
+            ColEstadoMateria.ReadOnly = true;
+            // 
             // button3
             // 
             button3.Location = new Point(52, 129);
@@ -102,34 +123,16 @@
             button1.Text = "Nuevo Registro";
             button1.UseVisualStyleBackColor = true;
             // 
-            // ColMateria
-            // 
-            ColMateria.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            ColMateria.HeaderText = "Materia";
-            ColMateria.Name = "ColMateria";
-            ColMateria.ReadOnly = true;
-            // 
-            // ColFechaCursada
-            // 
-            ColFechaCursada.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            ColFechaCursada.HeaderText = "Año";
-            ColFechaCursada.Name = "ColFechaCursada";
-            ColFechaCursada.ReadOnly = true;
-            // 
-            // ColEstadoMateria
-            // 
-            ColEstadoMateria.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            ColEstadoMateria.HeaderText = "Estado";
-            ColEstadoMateria.Name = "ColEstadoMateria";
-            ColEstadoMateria.ReadOnly = true;
-            // 
-            // HistorialMaterias
+            // FrmHistorialMaterias
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(splitContainer1);
-            Name = "HistorialMaterias";
+            MaximumSize = new Size(816, 489);
+            MinimumSize = new Size(816, 489);
+            Name = "FrmHistorialMaterias";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HistorialFinalesAprobados";
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
